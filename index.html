@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>JavaScript Deep Dive</title>
+		<title>JavaScript 101</title>
 
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="RevealJS/css/reveal.css">
@@ -28,17 +28,20 @@
 			<div class="slides">
 				<section>
 					<h1>JavaScript 101</h1>
-					<h4>covering:</h4>
+					<h4 style="color: red;">covering:</h4>
 					<ul>
 						<li>elements of a JS application</li>
 						<li>JS map APIs</li>
 						<li>best practise guidelines</li>
 						<li>debugging</li>
+						<li>Web AppBuilder</li>
 					</ul>
 				</section>
 
 				<section data-background="images/malcolmturnbull.jpg">
-
+					<div style="background-color: #fff">
+						<h4 style="color: red; margin-top: 400px">There has never been a more exciting time...</h4>
+					</div>
 				</section>
 
 				<section>
@@ -56,8 +59,9 @@
 					</section>
 
 					<section>
-						<p><small>NB: examples do not illustrate best practice</small></p>
+						<h4>ArcGIS sandbox environment</h4>
 						<iframe data-src="https://developers.arcgis.com/javascript/3/sandbox/sandbox.html?sample=map_simple" width="1280" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+						<p><small>NB: examples do not illustrate best practice</small></p>
 					</section>
 
 				</section>
@@ -79,10 +83,10 @@
 						</div>
 					</section>
 					<section data-background="#fff">
-						<iframe src="http://leafletjs.com/reference-1.0.0.html" width="1280" height="800" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen>></iframe>
+						<iframe src="http://leafletjs.com/reference-1.0.0.html" width="1280" height="800" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
 					</section>
 					<section data-background="#fff">
-						<iframe src="https://developers.arcgis.com/javascript/3/jsapi/" width="1280" height="800" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen>></iframe>
+						<iframe src="https://developers.arcgis.com/javascript/3/jsapi/" width="1280" height="800" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
 					</section>
 				</section>
 
@@ -98,6 +102,55 @@
 						<h4 style="color: red;">Dynamic layer</h4>
 						<p>images rendered on the server at run-time</p>
 					</span>
+				</section>
+
+				<section>
+					<section>
+						<h3>Events</h3>
+						<p>Respond with an <span class="highlight">action</span> when an <span class="highlight">event</span> occurs</p>
+					</section>
+					<section data-background="#fff">
+						<iframe src="http://leafletjs.com/reference-1.0.0.html#map-event" width="1280" height="800" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
+					</section>
+
+					<section data-background="#fff">
+						<iframe src="https://developers.arcgis.com/javascript/3/sandbox/sandbox.html?sample=fl_hover" width="1280" height="800" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
+					</section>
+				</section>
+
+				<section>
+					<h3>Debugging</h3>
+					<a target="_blank" href="examples/flHover/index.html"><img src="images/debugging.png" style="border: none; box-shadow: none;"></a>
+				</section>
+
+				<section>
+					<section>
+						<h4>ArcGIS Web AppBuilder</h4>
+						<ul>
+							<li>ready to use out-of-the-box</li>
+							<li>collection of widgets built-in</li>
+							<li>more widgets shared by users</li>
+						</ul>
+					</section>
+
+					<section data-background="#fff">
+						<iframe src="https://developers.arcgis.com/web-appbuilder/guide/xt-welcome.htm" width="1280" height="800" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
+					</section>
+
+					<section data-background="#fff">
+						<iframe src="https://vmgeospatialdev.erga.auiag.corp/iagviewer/portfolio/enterprise_ops/supply_chain/motor_footprint_1610/" width="1280" height="800" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
+					</section>
+
+					<section data-background="#fff">
+						<h4>Local Layer widget</h4>
+						<ul>
+							<li>Web AppBuilder expects data to be stored in ArcGIS Online or Portal for ArcGIS</li>
+							<li><a target="_blank" href="https://github.com/cmndrbensisko/LocalLayer">Local Layer widget</a> is circumvents this</li>
+							<li>define layers directly from ArcGIS Server:</li>
+						</ul>
+						<img style="border: none; box-shadow: none;" src="images/localLayer.png">
+					</section>
+
 				</section>
 
 			</div>
