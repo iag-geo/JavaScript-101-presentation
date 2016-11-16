@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>JavaScript Deep Dive</title>
+
+		<link rel="stylesheet" href="RevealJS/css/reveal.css">
+		<link rel="stylesheet" href="RevealJS/css/theme/black.css">
+		<link rel="stylesheet" href="RevealJS/css/style.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="RevealJS/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'RevealJS/css/print/pdf.css' : 'RevealJS/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>JavaScript 101</h1>
+					<h4>covering:</h4>
+					<ul>
+						<li>elements of a JS application</li>
+						<li>JS map APIs</li>
+						<li>best practise guidelines</li>
+						<li>debugging</li>
+					</ul>
+				</section>
+
+				<section data-background="images/malcolmturnbull.jpg">
+
+				</section>
+
+				<section>
+					<section>
+						<h4>Elements of a JavaScript map</h4>
+						<iframe data-src="https://developers.arcgis.com/javascript/3/sandbox/sandbox.html?sample=map_simple" width="1280" height="800" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+						
+					<section>
+						<ul>
+							<li><span class="highlight">CSS</span> (cascading style sheets) provide styling</li>
+							<li><span class="highlight">JS scripts</span> provide functionality</li>
+							<li><span class="highlight">DOM</span> (document object model) elements define the content</li>
+						</ul>	
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="RevealJS/lib/js/head.min.js"></script>
+		<script src="RevealJS/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'RevealJS/plugin/markdown/marked.js' },
+					{ src: 'RevealJS/plugin/markdown/markdown.js' },
+					{ src: 'RevealJS/plugin/notes/notes.js', async: true },
+					{ src: 'RevealJS/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
