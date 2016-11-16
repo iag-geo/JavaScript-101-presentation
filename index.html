@@ -6,6 +6,7 @@
 
 		<title>JavaScript Deep Dive</title>
 
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="RevealJS/css/reveal.css">
 		<link rel="stylesheet" href="RevealJS/css/theme/black.css">
 		<link rel="stylesheet" href="RevealJS/css/style.css">
@@ -43,7 +44,7 @@
 				<section>
 					<section>
 						<h4>Elements of a JavaScript map</h4>
-						<iframe data-src="https://developers.arcgis.com/javascript/3/sandbox/sandbox.html?sample=map_simple" width="1280" height="800" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+						<iframe data-src="http://leafletjs.com/examples/quick-start/" width="1280" height="800" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%; background-color: #fff" allowfullscreen> </iframe>
 					</section>
 						
 					<section>
@@ -53,12 +54,59 @@
 							<li><span class="highlight">DOM</span> (document object model) elements define the content</li>
 						</ul>	
 					</section>
+
+					<section>
+						<p><small>NB: examples do not illustrate best practice</small></p>
+						<iframe data-src="https://developers.arcgis.com/javascript/3/sandbox/sandbox.html?sample=map_simple" width="1280" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+
 				</section>
+
+				<section>
+					<section data-background="#fff">
+						<h3>Choosing a mapping API</h3>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-5">
+									<h4>LeafletJS</h4>
+									<img style="border: none; box-shadow: none;" src="images/switchblade.png">
+								</div>
+								<div class="col-md-4">
+									<h4>ArcGIS Server JS</h4>		
+									<img style="border: none; box-shadow: none;" src="images/swiss-army-knife.jpg">
+								</div>
+							</div>
+						</div>
+					</section>
+					<section data-background="#fff">
+						<iframe src="http://leafletjs.com/reference-1.0.0.html" width="1280" height="800" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen>></iframe>
+					</section>
+					<section data-background="#fff">
+						<iframe src="https://developers.arcgis.com/javascript/3/jsapi/" width="1280" height="800" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen>></iframe>
+					</section>
+				</section>
+
+				<section>
+					<h3>Data types</h3><br>
+					<h4 style="color: red;">Feature layer</h4>
+					<p>point, line or polygon, downloaded to the client browser</p>
+					<span class="fragment">
+						<h4 style="color: red;">Tiled layer</h4>
+						<p>pre-cached images using nested tiles</p>
+					</span>
+					<span class="fragment">
+						<h4 style="color: red;">Dynamic layer</h4>
+						<p>images rendered on the server at run-time</p>
+					</span>
+				</section>
+
 			</div>
 		</div>
 
 		<script src="RevealJS/lib/js/head.min.js"></script>
 		<script src="RevealJS/js/reveal.js"></script>
+		<script src="bootstrap/js/jquery-3.1.1.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
 
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
