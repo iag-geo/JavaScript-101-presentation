@@ -7,14 +7,25 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
     <title>Feature Layer - display results as an InfoWindow onHover</title>
 
+    <!-- load the Esri stylesheets -->
     <link rel="stylesheet" href="https://js.arcgis.com/3.18/dijit/themes/tundra/tundra.css">
     <link rel="stylesheet" href="https://js.arcgis.com/3.18/esri/css/esri.css">
+
+    <!-- custom stylesheet for this app -->
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="tundra">
+
+    <!-- a DIV to hold the map -->
     <div id="mapDiv"></div>
 
+    <!-- place the scripts at the end of the <body>, to avoid blocking loading of the page -->
+
+    <!-- reference the ArcGIS Server JS API -->
     <script src="https://js.arcgis.com/3.18/"></script>
+    
+    <!-- custom script for this app -->
     <script src="code.js"></script>
+  
   </body>
 </html>
